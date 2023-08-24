@@ -32,3 +32,13 @@ variable "vm_type" {
   type        = string
   description = "Azure Virtual Machine type name"
 }
+
+variable "acr_name" {
+  type        = string
+  description = "ACR name"
+}
+
+variable "acr_resource_group_name" {
+  type        = string
+  description = "RG name for ACR in Azure"
+}
