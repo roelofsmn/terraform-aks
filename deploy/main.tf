@@ -12,9 +12,9 @@ resource "azurerm_kubernetes_cluster" "aks" {
   node_resource_group = var.node_resource_group
 
   default_node_pool {
-    name                = "system"
-    node_count          = var.system_node_count
-    vm_size             = var.vm_type
+    name       = "system"
+    node_count = var.system_node_count
+    vm_size    = var.vm_type
     # type                = "VirtualMachineScaleSets"
     # availability_zones  = [1, 2, 3]
     enable_auto_scaling = false
